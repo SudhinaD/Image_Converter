@@ -1,0 +1,25 @@
+{
+  "name": "varuns-converter",
+  "version": "1.0.0",
+  "description": "Varun's Converter",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.varun.converter",
+    "productName": "Varun's Converter",
+    "win": {
+      "target": "portable"
+    },
+    "files": [
+      "main.js",
+      "varuns-converter.html"
+    ]
+  }
+}
